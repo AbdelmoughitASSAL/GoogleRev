@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choisissez votre établissement</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#0c3c7c,#2b73c5);
+    position:relative;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+    width:90%;
+    max-width:420px;
+    position:relative;
+    z-index:1;
+}
+
+/* Logo */
+.logo{
+    width:54px;
+    height:auto;
+    border-radius:0;
+    margin:0;
+    display:block;
+    transform:scale(2.2);
+    transform-origin:center;
+}
+
+.logo-wrap{
+    width:auto;
+    box-sizing:border-box;
+    background:#fff;
+    padding:18px;
+    border-radius:18px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:visible;
+    margin: 0 auto 20px auto;
+}
+
+/* Title */
+h1{
+    color:white;
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+/* Card button */
+.card{
+    background:#f2f2f2;
+    padding:18px;
+    margin:12px 0;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* left content */
+.left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.icon{
+    width:40px;
+    flex: 0 0 40px;
+}
+
+.left span{
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.menu{
+    font-size:20px;
+    color:#999;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('moroccan-zellij.png');
+    background-repeat: repeat;
+    background-size: 10%;
+    background-position: 0 0;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Logo -->
+    <div class="logo-wrap">
+        <img src="Google.png" class="logo" alt="Google logo">
+    </div>
+
+    <h1>Choisissez votre établissement</h1>
+
+    <!-- Cards -->
+
+    <a href="https://g.page/r/Ce4xImjebiA6EAE/review" class="card" target="_blank" rel="noopener">
+        <div class="left">
+            <img src="eemci.png" class="icon">
+            <span>EEMCI - MEKNES</span>
+        </div>
+    </a>
+    
+    <a href="#" class="card">
+        <div class="left">
+            <img src="eemsi.png" class="icon">
+            <span>EEMSI - MEKNES</span>
+        </div>
+    </a>
+
+    <a href="https://g.page/r/CQK0FrOTxYq7EAE/review" class="card" target="_blank" rel="noopener">
+        <div class="left">
+            <img src="eecic.png" class="icon">
+            <span>EECIC - MEKNES</span>
+        </div>
+    </a>
+
+
+    <a href="https://g.page/r/CS5x2KPJWuXiEAE/review" class="card" target="_blank" rel="noopener">
+        <div class="left">
+            <img src="eeli.png" class="icon">
+            <span>CENTRE EUROPEEN DES LANGUES - MEKNES</span>
+        </div>
+    </a>
+    
+    <a href="https://g.page/r/CWFCcINEOqxHEBM/review" class="card" target="_blank" rel="noopener">
+        <div class="left">
+            <img src="eeli.png" class="icon">
+            <span>CENTRE EUROPEEN DES LANGUES - DAKHLA</span>
+        </div>
+    </a>
+
+</div>
+
+</body>
+</html>
